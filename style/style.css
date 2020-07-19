@@ -1,0 +1,380 @@
+h1, h2, p {
+  /* font-family: ProximaNova-Bold; */
+  color: #572EE5;
+  text-align: center;
+}
+
+.buttonGeneral {
+  width: 127px;
+  height: 50px;
+  border: 1px  #572EE5 solid;
+  border-radius: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttonGeneral a {
+  /*   font-family: Montserrat-Bold; */
+  font-size: 13px;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.imagesGeneral {
+  margin: 46px 21px 78px 21px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 156px 156px;
+      grid-template-columns: 156px 156px;
+  -ms-grid-rows: (120px)[6];
+      grid-template-rows: repeat(6, 120px);
+  gap: 25px 21px;
+}
+
+.imagesGeneral img {
+  width: 156px;
+  height: 120px;
+}
+
+@media only screen and (min-width: 376px) {
+  .imagesGeneral {
+    margin: 36px 156px 78px 157px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (260px)[4];
+        grid-template-columns: repeat(4, 260px);
+    -ms-grid-rows: (200px)[3];
+        grid-template-rows: repeat(3, 200px);
+    gap: 29px 29px;
+  }
+  .imagesGeneral img {
+    width: 260px;
+    height: 200px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.edgePage {
+  background: #572EE5;
+  width: 375px;
+  height: 5px;
+  position: relative;
+}
+
+header {
+  height: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  padding: 10px;
+}
+
+header nav .containerBurger {
+  padding: 10px 20px;
+  font-size: 30px;
+}
+
+header ul {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  display: none;
+  background: rgba(87, 46, 229, 0.9);
+}
+
+header ul li {
+  list-style: none;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header ul li:hover {
+  background: #b9e4e1;
+}
+
+.active {
+  display: block;
+}
+
+.createGifo {
+  display: none;
+}
+
+@media only screen and (min-width: 376px) {
+  .edgePage {
+    width: 1440px;
+  }
+  header {
+    width: 1440px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  header .logo {
+    margin: 0 40% 0 10%;
+  }
+  nav .containerBurger {
+    display: none;
+  }
+  nav ul {
+    position: unset;
+    display: inline-block;
+    height: auto;
+    background: unset;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 45px;
+  }
+  nav ul li a {
+    font-size: 14px;
+    color: #572EE5;
+    font-weight: 600;
+  }
+  nav ul li:hover {
+    background: #b9e4e1;
+  }
+  .createGifo {
+    display: block;
+    border: 1px solid #572EE5;
+    border-radius: 50%;
+  }
+}
+
+.search {
+  width: 375px;
+  height: 504px;
+  /* 470px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search h1 {
+  width: 286px;
+  height: 99px;
+}
+
+.search h1 span {
+  color: #50E3C2;
+}
+
+.search img {
+  width: 273px;
+  height: 130px;
+}
+
+.search input {
+  width: 334px;
+  height: 50px;
+}
+
+.search .contentSearch {
+  text-align: center;
+}
+
+.search h2 {
+  width: 236px;
+  height: 25px;
+}
+
+.search p {
+  width: 225px;
+  height: 50px;
+}
+
+.pets {
+  width: 375px;
+  height: 1120px;
+}
+
+@media only screen and (min-width: 376px) {
+  .search {
+    width: 1440px;
+    height: 726px;
+  }
+  .search h1 {
+    width: 934px;
+    height: 100px;
+  }
+  .search img {
+    width: 399px;
+    height: 190px;
+  }
+  .search input {
+    width: 551px;
+    height: 200px;
+  }
+  .search h2, .search p {
+    display: none;
+  }
+  .pets {
+    width: 1440px;
+    height: 956px;
+  }
+  .pets h1 {
+    margin: auto;
+    width: 550px;
+    height: 30px;
+  }
+}
+
+.favorites {
+  width: 375px;
+  height: 1151px;
+}
+
+.favorites .iconFavorites {
+  width: 28px;
+  height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.favorites h2 {
+  width: 375px;
+  height: 29px;
+  /* font-family: Montserrat-Bold; */
+  font-size: 20px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+}
+
+.myGifos {
+  width: 860px;
+  height: 375px;
+}
+
+.myGifos h1 {
+  width: 375px;
+  height: 30px;
+}
+
+.myGifos .createGifo {
+  height: 375px;
+}
+
+.myGifos .createGifo .imgGifos {
+  width: 156px;
+  height: 120px;
+}
+
+.myGifos input {
+  width: 127px;
+  height: 50px;
+}
+
+.myGifos p {
+  width: 63px;
+  height: 16px;
+}
+
+.trending {
+  height: 35.8%;
+  width: 100%;
+  background: #F3F5F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trending h2 {
+  height: 2.5%;
+  width: 100%;
+}
+
+.trending p {
+  height: 3.8%;
+  width: 88.8%;
+}
+
+.trending img {
+  height: 15.6%;
+  width: 64.8%;
+}
+
+@media only screen and (min-width: 370px) {
+  .trending {
+    height: 42.1%;
+    width: 100%;
+    background: #F3F5F8;
+  }
+  .trending h2 {
+    height: 2%;
+    width: 38.2%;
+  }
+  .trending p {
+    height: 1.4%;
+    width: 24.6%;
+  }
+  .trending .imgTrending {
+    height: 18.1%;
+  }
+  .trending .imgTrending img {
+    height: 18.1%;
+    width: 24.8%;
+  }
+}
+
+footer {
+  height: 196px;
+}
+/*# sourceMappingURL=style.css.map */

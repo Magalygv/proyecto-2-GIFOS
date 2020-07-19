@@ -1,0 +1,44 @@
+.trending {
+    height: 35.8%;
+    width: 100%;
+    background: #F3F5F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    h2 {
+        height: 2.5%;
+        width: 100%;
+    }
+    p {
+        height: 3.8%;
+        width: 88.8%;
+    }
+    img {
+        height: 15.6%;
+        width: 64.8%;
+    }
+}
+
+@media only screen and (min-width: 370px) {
+    .trending {
+        height: 42.1%;
+        width: 100%;
+        background: #F3F5F8;
+        h2 {
+            height: 2%;
+            width: 38.2%;
+        }
+        p {
+            height: 1.4%;
+            width: 24.6%;
+        }
+        .imgTrending {
+            height: 18.1%;
+            img {
+                height: 18.1%;
+                width: 24.8%;
+            }
+        }
+    }
+}

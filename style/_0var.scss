@@ -1,0 +1,50 @@
+h1,h2,p {
+    /* font-family: ProximaNova-Bold; */
+    color: #572EE5;
+    text-align: center;
+}
+
+.buttonGeneral {
+        width: 127px;
+        height: 50px;
+        border: 1px  #572EE5 solid;
+        border-radius: 4% ;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        a{
+          /*   font-family: Montserrat-Bold; */
+        font-size: 13px;
+        color: #572EE5;
+        letter-spacing: 0;
+        text-align: center;
+        }
+
+    }
+    .imagesGeneral{
+      margin: 46px 21px 78px 21px ;
+      display: grid;
+      grid-template-columns: 156px 156px;
+      grid-template-rows: repeat(6, 120px);
+      gap: 25px 21px;
+      img{
+           width: 156px;
+           height: 120px;
+       }
+ }
+ 
+ @media only screen and (min-width: 376px)  {
+      .imagesGeneral{
+           margin: 36px 156px 78px 157px;
+           display: grid;
+           grid-template-columns: repeat(4, 260px);
+           grid-template-rows: repeat(3, 200px);
+           gap: 29px 29px;
+           
+           img{
+               width: 260px;
+               height: 200px;
+           }
+      } 
+ }
