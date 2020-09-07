@@ -30,7 +30,7 @@
       width: 342px;
       overflow: hidden;
       display: grid;
-      grid-template-columns: 243px 243px 243px ;
+      grid-template-columns: 243px 243px 243px;
       grid-template-rows: 187px;
       gap: 22px;
       margin-left: 32px;
@@ -80,7 +80,7 @@
       .imgTrending {
          width: 1215px;
          display: grid;
-         grid-template-columns: 357px 357px 357px 357px ;
+         grid-template-columns: 357px 357px 357px;
          grid-template-rows: 275px;
          gap: 29px;
          justify-content: center;
@@ -106,21 +106,23 @@
             border: 1px solid #572EE5; 
             opacity: 1;
             position: unset;
+            cursor: pointer;
          }
        .btnBack:hover{
-            background-image: url('..img/Button-Slider-left-hover.svg');
+            background-image: url('../img/Button-Slider-left-hover.svg');
             background-repeat: no-repeat;
-            background-position: 3px;
+            background-position: 4px;
             background-size: 100%;
             border: 0;
         }
         .btnNext:hover{
-            background-image: url('..img/Button-Slider-right-hover.svg');
+            background-image: url('../img/Button-Slider-right-hover.svg');
             background-repeat: no-repeat;
-            background-position: 3px;
+            background-position: 4px;
             background-size: 100%;
             border: 0; 
         } 
+        
       }
    }
 }

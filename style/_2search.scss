@@ -1,7 +1,6 @@
 .search {
     width: 375px;
     height: 504px;
-    /* 470px */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +28,6 @@
         width: 334px;
         .containerInpImg{
             display: flex;
-
             input {
                 width: 277px;
                 height: 50px;
@@ -38,7 +36,7 @@
                 border-radius: 27px;
             }
             input::placeholder {
-                text-align: center;
+                text-align: left;
                 font-family: $fontRoboto;
                 font-weight: 400;
                 font-size: 16px;
@@ -51,7 +49,6 @@
                 border-radius: 27px;
                 background-color: white;
                 img {
-                    
                     width: 20px;
                     height: 20px;
                 }
@@ -65,14 +62,12 @@
             .btnCloseHidden{
                 display: none;
             }
-           
         }
         ul{display: none;
         }
     }
     .contentSearch {
         text-align: center;
-       
     }
     h2 {
         width: 236px;
@@ -91,22 +86,23 @@
             white-space: pre;
         }
     } 
-
-}
-    .orderInpImg{
-        #btnSearch{
-            display: none;
-        } 
-    }
-    .hiddenTitleImg {
-        height: 100px;
-        #familySearch,
-        #titleSearch {
-            display: none;
-        }
-    }
    
-//Búsqueda no encontrada
+}
+.orderInpImg{
+    #btnSearch,
+    #familySearch,
+    #titleSearch{
+    display: none;
+    }
+}
+.hiddenTitleImg{
+    height: 100px; 
+    #familySearch,
+    #titleSearch{
+        display: none;
+    }
+}
+
 .styleNoFound{
     height: 576px;
     width: 1440px;
@@ -114,6 +110,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+        p{
+            font-family: $fontMonserrat;
+            font-size: 22px;
+            font-weight: 700;
+            color:#50E3C2  ;
+        }
 }
 
 .styleFullScreen {
@@ -133,6 +135,7 @@
         left: 20%;
         width: 20px;
         height: 20px;
+        cursor: pointer
     }
     .styleImgDirection{
         display: flex;
@@ -141,7 +144,6 @@
         width: 100%;
     }
     .styleDivDescription{
-        display: flex;
         justify-content: space-between;
         height: 70px;
         text-align: left;
@@ -151,7 +153,6 @@
         flex-direction: column;
         align-items: flex-start;
         margin-right: 21px;
-       
         p:nth-child(1){
             font-weight: bold;
             margin-bottom: 0;
@@ -159,31 +160,34 @@
         p:nth-child(2){
             margin-top: 0;
         }
-       
     }
     .imgFavorite,
     .imgDownload{
         width: 20px;
         height: 20px;
         padding: 9px;
-        border: 1px solid #ced7e3;
+        border: 1px solid #CED7E1;
         border-radius: 6px;
         margin-right: 21px;
     }
-    .imgFavorite:hover,
-    .imgDownload:hover {
+    .imgFavorite:hover {
         opacity: 0.7;
         background: #c0c0c0;
         border-radius: 6px;
     }
+    .imgDownload:hover {
+        opacity: 0.7;
+        background: #c0c0c0;
+        border-radius: 6px;
+
+    }
+    
 }
 
 @media only screen and (min-width: 376px) {
     .search {
         width: 1440px;
         height: 665px;
-        /* display: block;
-        text-align: center; */
         justify-content: center;
         h1 {
             width: 934px;
@@ -196,11 +200,9 @@
             }
         }
         .contentSearch {
-            /* height: 390px; */
             display: flex;
             flex-direction: column;
             align-items: center;
-            
             img {
                 width: 399px;
                 height: 190px;
@@ -216,7 +218,7 @@
                     }
                 }
                 ul{
-                    list-style-image: url('..img/icon-search.svg');
+                    list-style-image: url('../img/icon-search.svg');
                    
                 }
                 .ulShow{
@@ -230,6 +232,7 @@
                 }
                 .orderInpImg{
                     #btnSearch{
+                        display: block;
                         order: 1;
                     }
                     input{
@@ -267,10 +270,10 @@
         }
     }
     .hiddenTitleImg{
-        height: auto;
+        height: auto; 
         #familySearch,
-        #titleSearch {
-            display: block;
+        #titleSearch{
+           display: block;
         }
     }
 }

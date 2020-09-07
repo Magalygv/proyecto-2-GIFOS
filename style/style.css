@@ -575,7 +575,6 @@ nav ul li:nth-child(2)::after {
 .search {
   width: 375px;
   height: 504px;
-  /* 470px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,28 +637,28 @@ nav ul li:nth-child(2)::after {
 }
 
 .search .buttonSearch .containerInpImg input::-webkit-input-placeholder {
-  text-align: center;
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .search .buttonSearch .containerInpImg input:-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .search .buttonSearch .containerInpImg input::-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 .search .buttonSearch .containerInpImg input::placeholder {
-  text-align: center;
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -720,7 +719,9 @@ nav ul li:nth-child(2)::after {
   white-space: pre;
 }
 
-.orderInpImg #btnSearch {
+.orderInpImg #btnSearch,
+.orderInpImg #familySearch,
+.orderInpImg #titleSearch {
   display: none;
 }
 
@@ -748,6 +749,13 @@ nav ul li:nth-child(2)::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.styleNoFound p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #50E3C2;
 }
 
 .styleFullScreen {
@@ -778,6 +786,7 @@ nav ul li:nth-child(2)::after {
   left: 20%;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .styleFullScreen .styleImgDirection {
@@ -793,9 +802,6 @@ nav ul li:nth-child(2)::after {
 }
 
 .styleFullScreen .styleDivDescription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -831,12 +837,17 @@ nav ul li:nth-child(2)::after {
   width: 20px;
   height: 20px;
   padding: 9px;
-  border: 1px solid #ced7e3;
+  border: 1px solid #CED7E1;
   border-radius: 6px;
   margin-right: 21px;
 }
 
-.styleFullScreen .imgFavorite:hover,
+.styleFullScreen .imgFavorite:hover {
+  opacity: 0.7;
+  background: #c0c0c0;
+  border-radius: 6px;
+}
+
 .styleFullScreen .imgDownload:hover {
   opacity: 0.7;
   background: #c0c0c0;
@@ -847,8 +858,6 @@ nav ul li:nth-child(2)::after {
   .search {
     width: 1440px;
     height: 665px;
-    /* display: block;
-        text-align: center; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -864,7 +873,6 @@ nav ul li:nth-child(2)::after {
     white-space: pre;
   }
   .search .contentSearch {
-    /* height: 390px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -897,7 +905,7 @@ nav ul li:nth-child(2)::after {
     width: 500px;
   }
   .search .contentSearch .buttonSearch ul {
-    list-style-image: url("..img/icon-search.svg");
+    list-style-image: url("../img/icon-search.svg");
   }
   .search .contentSearch .buttonSearch .ulShow {
     width: 531px;
@@ -909,6 +917,7 @@ nav ul li:nth-child(2)::after {
     cursor: pointer;
   }
   .search .contentSearch .buttonSearch .orderInpImg #btnSearch {
+    display: block;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1211,8 +1220,8 @@ nav ul li:nth-child(2)::after {
     width: 1215px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 357px 357px 357px 357px;
-        grid-template-columns: 357px 357px 357px 357px;
+    -ms-grid-columns: 357px 357px 357px;
+        grid-template-columns: 357px 357px 357px;
     -ms-grid-rows: 275px;
         grid-template-rows: 275px;
     gap: 29px;
@@ -1247,18 +1256,19 @@ nav ul li:nth-child(2)::after {
     border: 1px solid #572EE5;
     opacity: 1;
     position: unset;
+    cursor: pointer;
   }
   .trending .containerCarouselTrending .btnBack:hover {
-    background-image: url("..img/Button-Slider-left-hover.svg");
+    background-image: url("../img/Button-Slider-left-hover.svg");
     background-repeat: no-repeat;
-    background-position: 3px;
+    background-position: 4px;
     background-size: 100%;
     border: 0;
   }
   .trending .containerCarouselTrending .btnNext:hover {
-    background-image: url("..img/Button-Slider-right-hover.svg");
+    background-image: url("../img/Button-Slider-right-hover.svg");
     background-repeat: no-repeat;
-    background-position: 3px;
+    background-position: 4px;
     background-size: 100%;
     border: 0;
   }
