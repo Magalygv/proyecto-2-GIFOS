@@ -76,19 +76,19 @@ function createImgTrending() {
                 /* Crear iconos Favoritos, Descarga y Maximizar */
                 let imgFavorite = document.createElement('img');
                 imgFavorite.setAttribute('id', `imgFavT${i}`);
-                imgFavorite.src = "img/icon-fav-hover.svg";
+                imgFavorite.src = "./img/icon-fav-hover.svg";
                 imgFavorite.setAttribute('onclick', 'addFavoritesTrending(this)');
                 imgFavorite.setAttribute('class', 'icon imgFavorite');
 
                 let imgDownload = document.createElement('img');
                 imgDownload.setAttribute('id', `imgDowT${i}`);
-                imgDownload.src = "img/icon-download.svg";
+                imgDownload.src = "./img/icon-download.svg";
                 imgDownload.setAttribute('onclick', 'downloadTrending(this)');
                 imgDownload.setAttribute('class', 'icon imgDownload');
 
                 let imgFullSize = document.createElement('img');
                 imgFullSize.setAttribute('id', `imgFulT${i}`);
-                imgFullSize.src = "img/icon-max.svg";
+                imgFullSize.src = "./img/icon-max.svg";
                 imgFullSize.setAttribute('onclick', 'fullSize(this)');
                 imgFullSize.setAttribute('class', 'icon imgFullSize');
 
@@ -159,7 +159,7 @@ function fullSize(iconFullScreen) {
     let imgFullScreenSrc = document.getElementById(`imgTren${extractLastDigit}`).src;
 
     let imgClose = document.createElement('img');
-    imgClose.src = '..img/close.svg';
+    imgClose.src = './img/close.svg';
     imgClose.classList.add('styleClose');
     imgClose.setAttribute('onclick', 'closeFullScreenTrending()');
 
@@ -167,7 +167,7 @@ function fullSize(iconFullScreen) {
     /* CONTENEDOR CON IMAGEN Y FLECHAS - SIGUIENTE ANTERIOR ***/
 
     let btnBack = document.createElement('img');
-    btnBack.src = '..img/button-left.svg';
+    btnBack.src = './img/button-left.svg';
     btnBack.setAttribute('class', 'btnBack');
     btnBack.setAttribute('onclick', 'backGIFFullSize()');
 
@@ -177,7 +177,7 @@ function fullSize(iconFullScreen) {
     imgFullScreen.setAttribute('id', `imgFullScreen`);
 
     let btnNext = document.createElement('img');
-    btnNext.src = '..img/button-right.svg';
+    btnNext.src = './img/button-right.svg';
     btnNext.setAttribute('class', 'btnNext');
     btnNext.setAttribute('onclick', 'nextGIFFullSize()');
 
@@ -209,12 +209,12 @@ function fullSize(iconFullScreen) {
     divText.appendChild(pTitle);
 
     let imgFavorite = document.createElement('img');
-    imgFavorite.src = "img/icon-fav-hover.svg";
+    imgFavorite.src = "./img/icon-fav-hover.svg";
     imgFavorite.setAttribute('onclick', 'addFavoritesFullScreen(this)');
     imgFavorite.setAttribute('class', 'icon imgFavorite');
 
     let imgDownload = document.createElement('img');
-    imgDownload.src = "img/icon-download.svg";
+    imgDownload.src = "./img/icon-download.svg";
     imgDownload.setAttribute('onclick', 'downloadFullScreen(this)');
     imgDownload.setAttribute('class', 'icon imgDownload');
 

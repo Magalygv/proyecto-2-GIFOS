@@ -131,7 +131,7 @@ a {
 }
 
 .iconsHover .imgHover:hover .imgFavorite:active {
-  content: url(img/icon-fav-active.svg);
+  content: url("./img/icon-fav-active.svg");
 }
 
 .iconsHover .imgHover:hover .imgDownload {
@@ -345,14 +345,14 @@ a {
     cursor: pointer;
   }
   .btnBack:hover {
-    background-image: url("..img/Button-Slider-left-hover.svg");
+    background-image: url("./img/Button-Slider-left-hover.svg");
     background-repeat: no-repeat;
     background-position: 3px;
     background-size: 100%;
     border: 0;
   }
   .btnNext:hover {
-    background-image: url("..img/Button-Slider-right-hover.svg");
+    background-image: url("./img/Button-Slider-right-hover.svg");
     background-repeat: no-repeat;
     background-position: 3px;
     background-size: 100%;
@@ -389,7 +389,7 @@ a {
     display: block;
   }
   .iconsHover .imgHover:hover .imgFavorite:active {
-    content: url(img/icon-fav-active.svg);
+    content: url("./img/icon-fav-active.svg");
   }
   .iconsHover .imgHover:hover .imgDownload {
     top: 10px;
@@ -897,7 +897,7 @@ nav ul li:nth-child(2)::after {
     width: 500px;
   }
   .search .contentSearch .buttonSearch ul {
-    list-style-image: url("..img/icon-search.svg");
+    list-style-image: url("./img/icon-search.svg");
   }
   .search .contentSearch .buttonSearch .ulShow {
     width: 531px;
@@ -1249,14 +1249,14 @@ nav ul li:nth-child(2)::after {
     position: unset;
   }
   .trending .containerCarouselTrending .btnBack:hover {
-    background-image: url("..img/Button-Slider-left-hover.svg");
+    background-image: url("./img/Button-Slider-left-hover.svg");
     background-repeat: no-repeat;
     background-position: 3px;
     background-size: 100%;
     border: 0;
   }
   .trending .containerCarouselTrending .btnNext:hover {
-    background-image: url("..img/Button-Slider-right-hover.svg");
+    background-image: url("./img/Button-Slider-right-hover.svg");
     background-repeat: no-repeat;
     background-position: 3px;
     background-size: 100%;

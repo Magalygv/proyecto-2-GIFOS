@@ -23,19 +23,19 @@ function loadContentFav() {
 
             let imgFavorite = document.createElement('img');
             imgFavorite.setAttribute('id', `imgFav${i}`);
-            imgFavorite.src = "img/icon-fav-active.svg";
+            imgFavorite.src = "./img/icon-fav-active.svg";
             imgFavorite.setAttribute('onclick', 'removeFavorites(this)');
             imgFavorite.setAttribute('class', 'icon imgFavorite');
 
             let imgDownload = document.createElement('img');
             imgDownload.setAttribute('id', `imgDow${i}`);
-            imgDownload.src = "img/icon-download.svg";
+            imgDownload.src = "./img/icon-download.svg";
             imgDownload.setAttribute('onclick', 'download(this)');
             imgDownload.setAttribute('class', 'icon imgDownload');
 
             let imgFullSize = document.createElement('img');
             imgFullSize.setAttribute('id', `imgFul${i}`);
-            imgFullSize.src = "img/icon-max.svg";
+            imgFullSize.src = "./img/icon-max.svg";
             imgFullSize.setAttribute('onclick', 'fullScreen(this)');
             imgFullSize.setAttribute('class', 'icon imgFullSize');
 
@@ -115,7 +115,7 @@ function fullScreen(iconFullScreen) {
     removeFavFullScreen = extractLastDigit ;
 
     let imgClose = document.createElement('img');
-    imgClose.src = '..img/close.svg';
+    imgClose.src = './img/close.svg';
     imgClose.classList.add('styleClose'); 
     imgClose.setAttribute('onclick', 'closeFullScreen()');
 
@@ -154,12 +154,12 @@ function fullScreen(iconFullScreen) {
     divText.appendChild(pTitle);
 
     let imgFavorite = document.createElement('img');
-    imgFavorite.src = "img/icon-fav-active.svg";
+    imgFavorite.src = "./img/icon-fav-active.svg";
     imgFavorite.setAttribute('onclick', 'removeFavoritesFullScreen(this)');
     imgFavorite.setAttribute('class', 'icon imgFavorite');
 
     let imgDownload = document.createElement('img');
-    imgDownload.src = "img/icon-download.svg";
+    imgDownload.src = "./img/icon-download.svg";
     imgDownload.setAttribute('onclick', 'downloadFullScreen(this)');
     imgDownload.setAttribute('class', 'icon imgDownload');
 
