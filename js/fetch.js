@@ -288,7 +288,7 @@ function fullScreen(iconFullScreen) {
     let imgFullScreenSrc = document.getElementById(`imgGIF${extractLastDigit}`).src;
 
     let imgClose = document.createElement('img');
-    imgClose.src = '../img/close.svg';
+    imgClose.src = '..img/close.svg';
     imgClose.classList.add('styleClose');
     imgClose.setAttribute('onclick', 'closeFullScreen()');
 
@@ -296,7 +296,7 @@ function fullScreen(iconFullScreen) {
     /* CONTENEDOR CON IMAGEN Y FLECHAS - SIGUIENTE ANTERIOR *******************/
 
     let btnBack = document.createElement('img');
-    btnBack.src = '../img/button-left.svg';
+    btnBack.src = '..img/button-left.svg';
     btnBack.setAttribute('class', 'btnBack');
     btnBack.setAttribute('onclick', 'backGifFullScreen()');
 
@@ -307,7 +307,7 @@ function fullScreen(iconFullScreen) {
     imgFullScreen.setAttribute('id','ImgFullScreen');
 
     let btnNext = document.createElement('img');
-    btnNext.src = '../img/button-right.svg';
+    btnNext.src = '..img/button-right.svg';
     btnNext.setAttribute('class', 'btnNext');
     btnNext.setAttribute('onclick', 'nextGifFullScreen()');
 

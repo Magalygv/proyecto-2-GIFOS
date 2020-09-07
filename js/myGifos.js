@@ -131,7 +131,7 @@ function fullScreen(iconFullScreen) {
     removeFavFullScreen = extractLastDigit;
 
     let imgClose = document.createElement('img');
-    imgClose.src = '../img/close.svg';
+    imgClose.src = '..img/close.svg';
     imgClose.classList.add('styleClose');
     imgClose.setAttribute('onclick', 'closeFullScreen()');
 

@@ -118,7 +118,7 @@ a {
             display: block;
         }
         .imgFavorite:active {
-            content: url(/img/icon-fav-active.svg);
+            content: url(img/icon-fav-active.svg);
         }
         .imgDownload {
             top: 10px;
@@ -314,14 +314,14 @@ a {
         cursor: pointer;
     }
     .btnBack:hover {
-        background-image: url('../img/Button-Slider-left-hover.svg');
+        background-image: url('..img/Button-Slider-left-hover.svg');
         background-repeat: no-repeat;
         background-position: 3px;
         background-size: 100%;
         border: 0;
     }
     .btnNext:hover {
-        background-image: url('../img/Button-Slider-right-hover.svg');
+        background-image: url('..img/Button-Slider-right-hover.svg');
         background-repeat: no-repeat;
         background-position: 3px;
         background-size: 100%;
@@ -358,7 +358,7 @@ a {
                 display: block;
             }
             .imgFavorite:active {
-                content: url(/img/icon-fav-active.svg);
+                content: url(img/icon-fav-active.svg);
             }
             .imgDownload {
                 top: 10px;

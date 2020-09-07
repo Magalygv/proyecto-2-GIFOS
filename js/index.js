@@ -42,30 +42,30 @@ let btnSearch = document.getElementById('imgBtnSearch')
 let imgCloseSearch = document.getElementById('imgCloseSearch');
 
 function ImgDarkTheme() {
-    logo.src = "/img/Logo-modo-noc.svg";
-    burger.src = "/img/burger-modo-noct.svg";
-    closeNav.src = "/img/close-modo-noct.svg";
+    logo.src = "img/Logo-modo-noc.svg";
+    burger.src = "img/burger-modo-noct.svg";
+    closeNav.src = "img/close-modo-noct.svg";
     if(camara != null && movie != null ) {
-    camara.src = "/img/camara-modo-noc.svg";
-    movie.src = "/img/pelicula-modo-noc.svg";
+    camara.src = "img/camara-modo-noc.svg";
+    movie.src = "img/pelicula-modo-noc.svg";
     }
     if(btnSearch != null) {
-        btnSearch.src = "/img/icon-search-mod-noc.svg"
-        imgCloseSearch.src = "/img/close-modo-noct.svg"
+        btnSearch.src = "img/icon-search-mod-noc.svg"
+        imgCloseSearch.src = "img/close-modo-noct.svg"
     }
 }
 
 function ImgLightTheme() {
-    logo.src = "/img/logo-desktop.svg";
-    burger.src = "/img/burger.svg";
-    closeNav.src = "/img/button-close.svg";
+    logo.src = "img/logo-desktop.svg";
+    burger.src = "img/burger.svg";
+    closeNav.src = "img/button-close.svg";
     if(camara != null && movie != null) {
-    camara.src = "/img/camara.svg";
-    movie.src = "/img/pelicula.svg";    
+    camara.src = "img/camara.svg";
+    movie.src = "img/pelicula.svg";    
     }
     if(btnSearch != null) {
-        imgCloseSearch.src = "/img/close-modo-noct.svg"
-        imgCloseSearch.src = "/img/button-close.svg"
+        imgCloseSearch.src = "img/close-modo-noct.svg"
+        imgCloseSearch.src = "img/button-close.svg"
 }
 }
 //traer información del tema actual

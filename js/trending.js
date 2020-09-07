@@ -159,7 +159,7 @@ function fullSize(iconFullScreen) {
     let imgFullScreenSrc = document.getElementById(`imgTren${extractLastDigit}`).src;
 
     let imgClose = document.createElement('img');
-    imgClose.src = '../img/close.svg';
+    imgClose.src = '..img/close.svg';
     imgClose.classList.add('styleClose');
     imgClose.setAttribute('onclick', 'closeFullScreenTrending()');
 
@@ -167,7 +167,7 @@ function fullSize(iconFullScreen) {
     /* CONTENEDOR CON IMAGEN Y FLECHAS - SIGUIENTE ANTERIOR ***/
 
     let btnBack = document.createElement('img');
-    btnBack.src = '../img/button-left.svg';
+    btnBack.src = '..img/button-left.svg';
     btnBack.setAttribute('class', 'btnBack');
     btnBack.setAttribute('onclick', 'backGIFFullSize()');
 
@@ -177,7 +177,7 @@ function fullSize(iconFullScreen) {
     imgFullScreen.setAttribute('id', `imgFullScreen`);
 
     let btnNext = document.createElement('img');
-    btnNext.src = '../img/button-right.svg';
+    btnNext.src = '..img/button-right.svg';
     btnNext.setAttribute('class', 'btnNext');
     btnNext.setAttribute('onclick', 'nextGIFFullSize()');
 
