@@ -1,65 +1,94 @@
+/* .container-button{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%) scale(3);
+     padding: 4%;
+     background: #008ef7;
+} */
+
 body {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.edgePage{
-    background: #572EE5;
+header {
     width: 375px;
-    height: 5px;
-    position: relative;
-}
-header{
-    height: 375px;
+    height: 95px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+
+    img {
         padding: 10px;
     }
- nav{
-     .containerBurger{
-         padding: 10px 20px;
-         font-size: 30px;
-     }
-    }
+}
 
-ul{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0;
-    display: none;
-    background: rgba(87, 46, 229, 0.90);
-    
-    li{
-        list-style: none;
-        padding: 30px 0px;
-        text-align: center;
-        a {
-            text-decoration: none;
-            color: #ffffff;
+nav {
+    .containerBurger {
+        padding: 10px 20px;
+        font-size: 30px;
         }
-    }
-        li:hover{
-            background: rgb(185, 228,225);
-        }  
+          
+     ul {
+        position: absolute;
+        left: 0;
+        width: 375px;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0;
+        display: none;
+        background: rgba(87,46,229,0.90);
+        li {
+            list-style: none;
+            padding: 30px 0;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 700;
+
+                &:hover{
+                    text-decoration:underline #5ED7C6;
+                    text-decoration-style: solid ;
+                }
+                &:active{
+                   color: #9CAFC3;
+                   text-decoration: none;
+                }
+            }
+        }
+        li:nth-child(1)::after,
+        li:nth-child(2)::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 41px;
+            background: gray;
+            position: absolute;
+            left: 167px;
+        }
+        li:nth-child(1)::after {
+            top: 115px;
+        }
+        li:nth-child(2)::after {
+            top: 240px;
+        }
+
     }
 }
 .active {
     display: block;
 }
-
-.createGifo {
+.hiddenCreateGifos{
+    display: none;
+}
+.createGifo{
     display: none;
 }
 
 @media only screen and (min-width:376px) {
-    .edgePage {
-
-        width: 1440px;}
     header {
         width: 1440px;
         height: 90px;
@@ -67,39 +96,44 @@ ul{
         justify-content: left;
         .logo {
             margin: 0 40% 0 10%;
+            line-height: unset;
+        }
+     }
+    nav {
+        .containerBurger {
+            display: none;               
+        }
+               
+            ul {
+                position: unset;
+                height: auto;
+                display: inline-block;
+                background: unset;
+                width: 100%;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 45px;          
+                    a {
+                        font-size: 13px;
+                        color:  #572EE5;
+                        font-weight: 700;
+                        line-height: 0px;
+                    }
+                }   
+                li:nth-child(1)::after,
+                li:nth-child(2)::after {
+                display: none;
+            }
         }
     }
-
-    nav{
-           .containerBurger {
-               display: none;
-           }
-      
-      ul{
-          position: unset;
-          display: inline-block;
-          height: auto;
-          background: unset;
-         
-          li{
-              list-style: none;
-              display: inline-block;
-              margin-right: 45px;
-              a {
-                  font-size: 14px;
-                  color: #572EE5;
-                  font-weight: 600;
-              }
-          }
-              li:hover{
-                  background: rgb(185, 228,225);
-              }  
-          }
-      }
-
-      .createGifo {
+    .hiddenCreateGifos{
+        display: block;
+    }
+    .createGifo {
         display: block;
         border: 1px solid #572EE5;
         border-radius: 50%;
-    } 
+    }
 }
+    

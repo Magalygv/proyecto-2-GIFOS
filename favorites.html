@@ -2,84 +2,78 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Proyecto 2</title>
-
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/hamburguer.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 My Gifos</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-	<div class="edgePage"></div>
-	<header>
-		<a href="index.html"class="logo"><img src="img/logo-mobile.svg" alt="logo page"></a>
+<body onload="loadContentFav()">
+    <div class="edgePage"></div>
+    <header>
+		<a href="index.html"class="logo"><img src="img/logo-mobile.svg"  alt="logo page"></a>
 
 		<nav>
 			<div class="containerBurger">
-				<i class="fas fa-bars menu"></i>
+				<img src="img/burger.svg" class="menu" id="navBar" alt="Image menu burger">
+                <img src="img/button-close.svg" class="hidden" id="navBarClose" alt="Image button close">
+					<!-- <i class="fas fa-bars menu" id="navBar"></i>
+							<i class="fas fa-times menu"></i> -->
 			</div>
-			<ul>
-				<li><a href="#">Modo Nocturno</a></li>
-				<li><a href="favorites.html">Favoritos</a></li>
-				<li><a href="myGifos.html">Mis GIFOS</a></li>
+			<ul id="ulNavBar">
+				<li><a href="#" id="theme">MODO NOCTURNO</a></li>
+				<li><a href="favorites.html">FAVORITOS</a></li>
+				<li><a href="myGifos.html">MIS GIFOS</a></li>
 			</ul>
 		</nav>
-		<img src="img/button-crear-gifo.svg" class="createGifo" alt="image create gifo">
+		<a href="createGifos.html" class="hiddenCreateGifos"> <img src="img/button-crear-gifo.svg" class="createGifo" alt="Imagen crear gifo"></a>
 	</header>
 
-	<main>
-		<section class="favorites">
-			<img class="iconFavorites" src="img/icon-favoritos.svg" alt="icon favorito">
-			<h2>Favoritos</h2>
-			<div class="imagesGeneral">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-            <img src="https://via.placeholder.com/150x120" alt="">
-			<img src="https://via.placeholder.com/150x120" alt="">
-		</div>
-		<div class="buttonGeneral"><a href="">VER MÁS></a> </div>
+    <main>
 
-			<div class="carita"><img src="img/icon-mis-gifos-sin-contenido.svg" alt=""></div>
-			<p>Guarda tu primer grifo en favoritos para que se muestre aqui</p>
+        <section class="favorites iconsHover">
+            <img class="iconFavorites" src='img/icon-favoritos.svg' alt='icon favorites'>
+            <h2>Favoritos</h2>
+            <div class="imagesGeneral" id="outImgFav"> </div>
 
-		</section>
-			 <!-- 
-            <img src="img/icon-mis-gifos-sin-contenido.svg" alt="image Gifos without content">
-            <p>¡Guarda tu primer Gifo en favoritos para que se muestre </p>  -->
-
-		<section class="trending">
-			<h2>Trending GIFOS</h2>
-            <P>Mira los últimos GIFOS de nuestra comunidad.</P>
-            <div class="imagTrending">
-				<img src="https://via.placeholder.com/150" alt="">
-				<img src="https://via.placeholder.com/150" alt="">
-				<img src="https://via.placeholder.com/150" alt="">
+            <div id="saveFirstGifo" class="saveFirstGifoHidden">
+                <img src="img/icon-mis-gifos-sin-contenido.svg" alt="image Gifos without content">
+                <p>"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"</p>
             </div>
-		</section>
 
-	</main>
+            <button class="buttonGeneral" id="buttonGeneralFavorites" onclick="clearFavorites()"> Ver más </button>
+        </section>
 
-	<footer>
-		<p>Compartir en:</p>
-		<a href=""><img src="img/icon_facebook.svg" alt=""></a>
-		<a href=""><img src="img/icon-twitter.svg" alt=""></a>
-		<a href=""><img src="img/icon_instagram.svg" alt=""></a>
-		<p>©️ GIFOS 2020 All Rights Reserved.</p>
-	</footer>
+        <section class="trending iconsHover">
+            <h2>Trending GIFOS</h2>
+            <P>Mira los últimos <span> GIFOS de nuestra comunidad.</span></P>
+            <div class="containerCarouselTrending">
+                <img src="img/button-left.svg" id="btnBack" class="btnBack" alt="boton atras">
+                <div class="imgTrending" id="sectionTrending">
+                </div>
+                <img src="img/button-right.svg" id="btnNext" class ="btnNext" alt="botos siguiente"> 
+            </div>
+            <div id="divFullScreen" class="hidden"></di>
+        </section>
+    
 
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+    </main>
+    <footer>
+        <p>Compartir en:</p>
+        <div>
+            <a href="https://www.facebook.com/"><img src="img/icon_facebook.svg" alt="facebook"></a>
+            <a href="https://www.twitter.com/"><img src="img/icon-twitter.svg" alt="twitter"></a>
+            <a href="https://www.instagram.com/"><img src="img/icon_instagram.svg" alt="instagram"></a>
+        </div>
+        <p>© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    <div class="edgePage"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/trending.js"></script>
 </body>
 
 </html>
