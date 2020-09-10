@@ -93,7 +93,7 @@ function stopRecordingFn() {
 // Send Gif to Giphy
 async function sendGif(data) {
     const endpoint = "https://upload.giphy.com/v1/gifs";
-    const username = 'lescobarc';
+    const username = 'Magalygv';
 
     var formData = new FormData();
     formData.append("api_key", APIKEY);
@@ -110,6 +110,7 @@ async function sendGif(data) {
     let ids = localStorage.getItem('sendCreateGifos') != null ? localStorage.getItem('sendCreateGifos').split(',') : [];
     ids.push(gifResult.data.id);
     localStorage.setItem('sendCreateGifos', ids);
+    succesUpGifo();
 }
 
 
@@ -131,14 +132,6 @@ function divUpRecord() {
     check.classList.add('hidden');
     check.classList.remove('iconCreateGifos');
 
-    setTimeout(() => {
-        loader.classList.add('hidden');
-        loader.classList.remove('iconCreateGifos');
-        check.classList.remove('hidden');
-        check.classList.add('iconCreateGifos');
-        textCreateGifos.innerText = "GIFO subido con éxito";
-        document.getElementById('btnStart').classList.add('hidden');
-    }, 2000);
 
 }
 
@@ -153,4 +146,18 @@ function interval() {
 function stopTimer() {
     clearInterval(time);
     document.getElementById("timer").innerText = "REPETIR CAPTURA";
+}
+
+function succesUpGifo() {
+
+    let textCreateGifos = document.getElementById('textCreateGifos');
+    let loader = document.getElementById('loader');
+    let check = document.getElementById('check');
+   
+    loader.classList.add('hidden');
+    loader.classList.remove('iconCreateGifos');
+    check.classList.remove('hidden');
+    check.classList.add('iconCreateGifos');
+    textCreateGifos.innerText = "GIFO subido con éxito";
+    document.getElementById('btnStart').classList.add('hidden');
 }
