@@ -1194,6 +1194,16 @@ nav ul li:nth-child(2)::after {
   right: 0px;
 }
 
+.pointerTrending {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 500;
+}
+
 @media only screen and (min-width: 376px) {
   .trending {
     width: 1440px;
@@ -1275,8 +1285,8 @@ nav ul li:nth-child(2)::after {
 }
 
 .createGifos {
-  height: 572px;
   width: 1440px;
+  height: 572px;
 }
 
 .createGifos .cam {
@@ -1286,7 +1296,7 @@ nav ul li:nth-child(2)::after {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
 }
 
 .createGifos .cam img:nth-child(1) {
@@ -1353,7 +1363,7 @@ nav ul li:nth-child(2)::after {
 
 .createGifos .cam .upRecord .iconCreateGifos {
   margin-bottom: 20px;
-  margin-left: 0;
+  margin-left: 0px;
 }
 
 .createGifos .cam .upRecord .textCreateGifos {
@@ -1383,7 +1393,6 @@ nav ul li:nth-child(2)::after {
   border: 1px solid #572EE5;
   border-radius: 50%;
   text-align: center;
-  /*    color: #572EE5; */
 }
 
 .createGifos .page span:hover {
@@ -1404,10 +1413,10 @@ nav ul li:nth-child(2)::after {
   width: 131px;
   height: 16px;
   margin-right: 67px;
+  color: #572EE5;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #572EE5;
 }
 
 .createGifos .page img {
@@ -1424,6 +1433,26 @@ nav ul li:nth-child(2)::after {
 
 .createGifos #btnStart {
   margin-top: 20px;
+}
+
+.iconCreate {
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 6px;
+  top: 11px;
+  right: 12px;
+  margin-right: 63px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.iconCreate:hover {
+  opacity: 0.7;
+  background: #e2e2e2;
+  border-radius: 6px;
 }
 
 .camLoadHidden h2,

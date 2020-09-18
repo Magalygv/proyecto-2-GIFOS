@@ -2,31 +2,32 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Gifos</title>
-	<link rel="stylesheet" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 - My GIFOS</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 
-<body >
-	
-	<div class="edgePage"></div>
-	<header>
-		<a href="index.html" class="logo"><img src="img/logo-desktop.svg"  id="logo" alt="page logo"></a>		<nav>
-			<div class="containerBurger">
-				<img src="img/burger.svg" class="menu" id="navBar" alt="Image burguer menu">
-				<img src="img/button-close.svg" class="hidden" id="navBarClose" alt="Image close menu ">
-			</div>
-			<ul id="ulNavBar">
-				<li><a href="#" id="theme">MODO NOCTURNO</a></li>
-				<li><a href="favorites.html">FAVORITOS</a></li>
-				<li><a href="myGifos.html">MIS GIFOS</a></li>
-			</ul>
-		</nav>
-		<a href="createGifos.html" class="hiddenCreateGifos"> <img src="img/button-crear-gifo.svg" class="createGifo" alt="Image create gifos"></a>
-	</header>
+<body>
+    <div class="edgePage"></div>
+    <header>
+        <a href="index.html" class="logo"><img id="logo" src="img/logo-desktop.svg" alt="logo page"></a>
 
-	<main>
+        <nav>
+            <div class="containerBurger">
+                <img src="img/burger.svg" class="menu" id="navBar" alt="Image menu burger">
+                <img src="img/button-close.svg" class="hidden" id="navBarClose" alt="Image button close">
+            </div>
+            <ul id="ulNavBar">
+                <li><a href="#" id="theme">MODO NOCTURNO</a></li>
+                <li><a href="favorites.html">FAVORITOS</a></li>
+                <li><a href="myGifos.html">MIS GIFOS</a></li>
+            </ul>
+        </nav>
+        <a href="createGifos.html" class="hiddenCreateGifos"><img src="img/button-crear-gifo.svg" class="createGifo" alt="Image create gifos"></a>
+    </header>
+    <main>
         <section class="createGifos">
             <div class="cam">
                 <img src="img/camara.svg" id="camara" alt="Image camara">
@@ -34,50 +35,40 @@
                 <div class="camLoad" id="camLoad">
                     <h2>Aquí podrás <br> crear tus propios <span>GIFOS</span></h2>
                     <p>¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
-					<video autoplay > </video>
-					<div class="hidden" id="upRecord">
+                    <video autoplay></video>
+                    <div class="hidden" id="upRecord">
+                        <img src="img/icon-download.svg" id="download" class="hidden" alt="Image Download">
+                        <img src="img/icon-link.svg" id="link" class="hidden" alt="Image link">
                         <img src="img/loader.svg" id="loader" class="hidden" alt="Image loader">
                         <img src="img/check.svg" id="check" class="hidden" alt="Image check">
                         <p id="textCreateGifos" class="hidden"></p>
-					</div>
+                    </div>
                 </div>
             </div>
-
             <div class="page">
-                <span id="btnAllowCam"> 1</span>
-                <span id="btnRecordCam">2 </span>
-				<span id="btnUploadCam">3</span>
-				<p id="timer"></p>
-				<img src="img/pelicula.svg" id='movie'	 alt="Image movie">
-				
+                <span id="btnAllowCam">1</span>
+                <span id="btnRecordCam">2</span>
+                <span id="btnUploadCam">3</span>
+                <p id="timer"></p>
+                <img src="img/pelicula.svg" id="movie" alt="Image movie">
             </div>
-
-            <div class="separator"> </div>
+            <div class="separator"></div>
             <button class="buttonGeneral" id="btnStart">COMENZAR</button>
-
         </section>
-
-    
-        
-	</main>
-
-	<footer>
-		<p>Compartir en:</p>
-		<div>
-			<a href="https://es-la.facebook.com/" target="_blank"><img src="img/icon_facebook.svg" alt="Icon Facebook"></a>
-			<a href="https://twitter.com/" target="_blank"><img src="img/icon-twitter.svg" alt="Icon Twitter"></a>
-			<a href="https://www.instagram.com/" target="_blank"><img src="img/icon_instagram.svg" alt="Icon Instagram"></a>
-		</div>
-		<p>© GIFOS 2020 All Rights Reserved.</p>
-		
-	</footer>
-	<div class="edgePage"></div>
-
-	<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/createGifos.js"></script>
-	
-
+    </main>
+    <footer>
+        <p>Compartir en:</p>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icon_facebook.svg" alt="Image icon facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/icon-twitter.svg" alt="Image icon twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icon_instagram.svg" alt="Image icon instagram"></a>
+        </div>
+        <p>© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+    <div class="edgePage"></div>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/createGifos.js"></script>
 </body>
 
 </html>

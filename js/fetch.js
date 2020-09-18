@@ -23,38 +23,46 @@ document.getElementById('search').addEventListener('keyup', suggestSearch);
 /* funcion de busqueda inicial*/
 function init() {
 
-
     document.getElementById('noFound').classList.remove('styleNoFound');
     document.getElementById('noFound').classList.add('hidden');
 
-    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=12&offset=0&q=`;
     let str = document.getElementById("search").value;
-    url = url.concat(str);
+    searchGifs(str);
+
+}
     
+function searchGifs(textSearch){
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=12&offset=0&q=`;
+    url = url.concat(textSearch);
+
     fetch(url).then(response => response.json()).then(content => {
             
-            if (content.data != "") {
-                try {
-                    document.getElementById('sectionSearch').classList.remove('hidden');
-                    document.getElementById('searchIndex').innerText = "";
-                    document.getElementById('h2SectionSearch').innerText = document.getElementById("search").value;
+        if (content.data != "") {
+            try {
+                document.getElementById('sectionSearch').classList.remove('hidden');
+                document.getElementById('searchIndex').innerText = "";
+                document.getElementById('h2SectionSearch').innerText = document.getElementById("search").value;
 
-                    createImgSearch(content, countID);
+                createImgSearch(content, countID);
 
-                    document.getElementById("btnSearch").disabled = true;
-                } catch (error) {
-                    console.log(error);
-                }
-            } else {
-                console.log('No hay GIF para la palabra buscada: ' + document.getElementById('search').value);
-                showMessageNoFound();
+                document.getElementById("btnSearch").disabled = true;
+            } catch (error) {
+                console.log(error);
             }
+        } else {
+            console.log('No hay GIF para la palabra buscada: ' + document.getElementById('search').value);
+            showMessageNoFound();
+        }
 
-        })
-        .catch(err => {
-            console.error(err);
-        });
+    })
+    .catch(err => {
+        console.error(err);
+    });
+
+
 }
+    
+
 
 /* Event Listener boton ver más*/
 function seeMore() {
@@ -363,10 +371,7 @@ function fullScreen(iconFullScreen) {
     divFullScreen.appendChild(divImgDirection);
     divFullScreen.appendChild(divDescription);
     document.querySelector('body').appendChild(divFullScreen);
-
-
 }
-
 
 async function download(e) {
 

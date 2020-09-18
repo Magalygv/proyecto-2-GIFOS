@@ -272,3 +272,31 @@ function backGIFFullSize() {
         pTitle.innerText = arrayTrendingtitle[auxExtractLastDigit];
     }
 }
+
+/* busqueda trending */
+function searchTrending(trending) {
+    searchGifs(trending);
+}
+
+document.getElementById("reactionsTrending").addEventListener('click', ()=>{
+
+    searchTrending('reactions');
+});
+
+document.getElementById("reactionsEntertainment").addEventListener('click', ()=>{
+
+    searchTrending('Entertainment');
+});
+
+document.getElementById("reactionsSports").addEventListener('click', ()=>{
+
+    searchTrending('Sports');
+});
+document.getElementById("reactionsStickers").addEventListener('click', ()=>{
+
+    searchTrending('Stickers');
+});
+document.getElementById("reactionsArtists").addEventListener('click', ()=>{
+
+    searchTrending('Artists');
+});
