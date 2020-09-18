@@ -214,9 +214,8 @@ link */
 let link = document.getElementById("link");
 
 link.addEventListener("click",() => {
-
-let a = document.createElement("a");
-a.href=URL.createObjectURL(recorder.getBlob());
-a.target="_blank";
-a.click();
+    let a = document.createElement("a");
+    a.href=URL.createObjectURL(recorder.getBlob());
+    a.target="_blank";
+    a.click();
 });
